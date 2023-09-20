@@ -1,5 +1,5 @@
 header{
-    background-color: blue;
+    background-color: rgb(16, 16, 144);
     color: aliceblue;
     text-align:center;
     margin: 0px
@@ -15,6 +15,7 @@ header{
 }
 #cabeçalho{
     height: 40px;
+    font-weight: bold;
 }
 
 h2{
@@ -41,4 +42,14 @@ a{
 a:hover{
     background-color: rgba(0, 0, 0, 0.405);
     text-decoration: underline;
+}
+
+footer > p > a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+    background-color: rgba(52, 53, 49, 0.505);
+}
+
+footer > p > a{
+    color: aliceblue;
 }
