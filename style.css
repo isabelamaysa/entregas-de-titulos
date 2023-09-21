@@ -1,39 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= PT+Serif:ital@1 & display=swap');
+
+:root{
+    --fonte1:'PT Serif', serif;
+    --fonte2:'PT Serif', serif;
+}
+
+*{
+    margin: 0px; 
+    padding: 0px;
+    /*usados para tirar as margens da pagina e deixar tudo bem colado*/
+}
+
+body{
+    min-height: 80vh;
+    font-family: var(--fonte1);
+}
+
 header{
     background-color: rgb(16, 16, 144);
     color: aliceblue;
     text-align:center;
-    margin: 0px
-    margin-bottom: 10px;
-    min-height: 120px;
-    height: 150px;
-    width: auto;
+}
+
+header > h1{
+    font-size: 6vw;
 }
 
 .cabeçalho{
-    padding: 20px;
-    height: 30px;
-}
-#cabeçalho{
-    height: 40px;
-    font-weight: bold;
+    padding-top: 30px;
+    font-variant: small-caps;
+    font-family: 'PT Serif', serif;
 }
 
-h2{
+#cabeçalho{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+section{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    line-height: 1.5em;
+    font-size: 2vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+
+.normal{
+    background-color: rgb(219, 235, 249);
+
+}
+
+.imagem{
+    background-color: aquamarine;
+    color: white;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.imagem > p {
+    background-color: #0000007c;
+    display: inline-block;
+    
+
+}
+
+p{
     padding: 20px;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
+    
 }
 
-footer{
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    padding: 0px;
+#img01{
+    background-image: url(imagens/foto01.jpg);
+    background-position: left;
+
+
 }
 
-a{
+#img02{
+    background-image: url(imagens/foto02.jpg);
+
+}
+
+#fim{
+    font-size: 14px;
+}
+ 
+.normal > p > a{
     color: black;
     text-decoration: none;
     font-weight: bold;
@@ -44,12 +104,16 @@ a:hover{
     text-decoration: underline;
 }
 
-footer > p > a:hover{
-    color: aliceblue;
-    text-decoration: underline;
-    background-color: rgba(52, 53, 49, 0.505);
+footer{
+    background-color: black;
+    padding: 10px;
+}
+
+footer > p{
+    color: white;
+    text-align: center;
 }
 
 footer > p > a{
-    color: aliceblue;
+    color: white;
 }
