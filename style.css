@@ -2,124 +2,96 @@
 
 @import url('https://fonts.googleapis.com/css2? family= PT+Serif:ital@1 & display=swap');
 
-h1{
-    color: black;
-}
-
 :root{
     --fonte1:'PT Serif', serif;
     --fonte2:'PT Serif', serif;
 }
-
-*{
-    margin: 0px; 
+* {
+    margin: 0px;
     padding: 0px;
-    /*usados para tirar as margens da pagina e deixar tudo bem colado*/
+    font-size: 1em;
 }
 
-body{
-    min-height: 80vh;
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
     font-family: var(--fonte1);
 }
 
-header{
-    background-color: rgb(16, 16, 144);
-    color: aliceblue;
-    text-align:center;
-}
-
-header > h1{
-    font-size: 6vw;
-}
-
-.cabeçalho{
-    padding-top: 30px;
-    font-variant: small-caps;
-    font-family: 'PT Serif', serif;
-}
-
-#cabeçalho{
-    padding-top: 10px;
-    padding-bottom: 30px;
+header {
+    background-color: rgb(16, 41, 143);
+    color: white;
     text-align: center;
 }
 
-section{
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    line-height: 1.5em;
-    font-size: 2vw;
-}
-section > p{
-    padding-bottom: 2.3em;
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
-.normal{
-    background-color: rgb(219, 235, 249);
-
+header > p {
+    padding-bottom: 50px;
 }
 
-.imagem{
-    background-color: aquamarine;
+header a, footer a {
     color: white;
-    padding: 20px;
-    font-size: 13px;
-    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.918);
-    background-attachment: fixed;
-
+    text-decoration: none;
+    font-weight: bolder;
 }
 
-.imagem > p {
-    background-color: #0000009f;
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
     display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
 }
 
-p{
-    padding: 20px;
-    text-align: left;
-    font-size: 16px;
-    text-align: justify;
+section#img01 {
+    background-image: url('imagens/foto01.jpg');
+    background-position: right center;
     
 }
 
-#img01{
-    background-image: url(imagens/foto01.jpg);
-    background-position: left;
-    background-size: cover;
-
-
-}
-
-#img02{
-    background-image: url(imagens/foto02.jpg);
-    background-size: cover;
-    text-align: right;
-
-}
-
-#fim{
-    font-size: 14px;
-}
- 
-.normal > p > a{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover{
-    background-color: rgba(0, 0, 0, 0.405);
-    text-decoration: underline;
+section#img02 {
+    background-image: url('imagens/foto02.jpg');
+    
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(19, 18, 105);
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
