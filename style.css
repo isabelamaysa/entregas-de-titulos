@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2? family= PT+Serif:ital@1 & display=swap');
 
+h1{
+    color: black;
+}
+
 :root{
     --fonte1:'PT Serif', serif;
     --fonte2:'PT Serif', serif;
@@ -47,7 +51,7 @@ section{
     font-size: 2vw;
 }
 section > p{
-    padding-bottom: 2em;
+    padding-bottom: 2.3em;
 }
 
 .normal{
@@ -60,13 +64,15 @@ section > p{
     color: white;
     padding: 20px;
     font-size: 13px;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.918);
+    background-attachment: fixed;
+
 }
 
 .imagem > p {
-    background-color: #0000007c;
+    background-color: #0000009f;
     display: inline-block;
-    
-
+    text-shadow: 1px 1px 0px black;
 }
 
 p{
@@ -80,12 +86,15 @@ p{
 #img01{
     background-image: url(imagens/foto01.jpg);
     background-position: left;
+    background-size: cover;
 
 
 }
 
 #img02{
     background-image: url(imagens/foto02.jpg);
+    background-size: cover;
+    text-align: right;
 
 }
 
@@ -104,16 +113,13 @@ a:hover{
     text-decoration: underline;
 }
 
-footer{
+footer {
     background-color: black;
+    color: white;
+    text-align: center;
     padding: 10px;
 }
 
-footer > p{
-    color: white;
-    text-align: center;
-}
-
-footer > p > a{
-    color: white;
+footer a:hover {
+    text-decoration: underline;
 }
